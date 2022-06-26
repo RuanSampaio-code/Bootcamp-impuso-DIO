@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos justufy - content</title>
+    <style>
+        .container{
+            display: flex;
+            max-width: 400px;
+            border:  1px solid black;
+            margin: 0px;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            text-align: center;
+            color:bisque ;
+        }
+
+        .flex-start{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .flex-end{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .flex-center{
+            display: flex;
+            justify-content: center;
+        }
+
+        .space-between{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .space-around{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .column{
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 200px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <h1>DEFAULT</h1>
+    <section class="container flex-start">
+
+        <div class="item"> 1</div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3</div>
+
+    </section>
+    
+    <h1>flex-end</h1>
+    <section class="container flex-end">
+
+        <div class="item"> 1</div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3</div>
+
+    </section>
+    
+    <h1>flex-center</h1>
+    <section class="container flex-center">
+
+        <div class="item"> 1</div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3</div>
+
+    </section>
+
+    <h1>flex-space-between</h1>
+    <section class="container space-between">
+
+        <div class="item"> 1</div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3</div>
+
+    </section>
+
+    <h1>flex-space-around</h1>
+    <section class="container space-around">
+
+        <div class="item"> 1</div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3</div>
+        <div class="item"> 3</div>
+        <div class="item"> 3</div>
+
+    </section>
+
+    <h1>COLUNM</h1>
+    <section class="container flex-start column">
+
+        <div class="item"> 1</div>
+        <div class="item"> 2 </div>
+        <div class="item"> 3</div>
+        <div class="item"> 3</div>
+        <div class="item"> 3</div>
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+        }
+
+        .item{
+            background-color: rgb(45, 63, 57);
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .strectch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .central{
+           
+            height: 300px;
+            justify-content: center;
+         
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>center</h1>
+    <section class="container center">
+        <div class="item">item</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">item3</div>
+
+    </section>
+
+    <h1>strectch</h1>
+    <section class="container strectch">
+        <div class="item">item</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">item3 Lorem ipsum dolor sit amet consectetur.</div>
+
+    </section>
+
+    <h1>flex-start</h1>
+    <section class="container flex-start">
+        <div class="item"> item</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">item3 Lorem ipsum dolor sit amet consectetur.</div>
+    </section>
+
+    <h1>flex-end</h1>
+    <section class="container flex-end">
+        <div class="item">item</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">item3 Lorem ipsum dolor sit amet consectetur.</div>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="container baseline">
+        <div class="item"> <br> item</div>
+        <div class="item">Lorem ipsum dolor sit amet.</div>
+        <div class="item">item3 Lorem ipsum dolor sit amet consectetur.</div>
+    </section>
+
+    <h1>container central</h1>
+    <section class="container center central">
+        
+        <div class="item"> Lorem ipsum dolor silorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, debitis! </div>
+    </section>
+    
+</body>
+</html>

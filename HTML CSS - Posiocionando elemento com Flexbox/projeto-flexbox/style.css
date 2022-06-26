@@ -1,0 +1,23 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+header{
+    background-color: aqua;
+}
+.flex-container{
+    display: flex;
+    margin: auto;
+    max-width: 992px;
+}
