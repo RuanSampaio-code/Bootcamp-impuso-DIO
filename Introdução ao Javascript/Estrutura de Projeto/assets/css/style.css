@@ -1,0 +1,28 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    color: rgb(44, 39, 39);
+    text-align: center; 
+    background-image: linear-gradient(to left, rgb(51, 165, 194)
+    , rgb(105, 218, 184));
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    
+  
+    
+    
+}
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+span{
+    margin: 15px;
+}

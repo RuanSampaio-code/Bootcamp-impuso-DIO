@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            
+            text-align: center;
+            list-style: circle;
+        }
+       input{
+           display: inline;
+       }
+       p{
+           display: inline;
+       }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>To do list</h1>
+        <input id="item-list" type="text" placeholder="Digite uma tarefa">
+        <button id="button" onclick="adcionar()">Adicionar</button>
+        <div>
+            <input type="checkbox" name="" id="caixa"> <p id="p" ></p>
+        </div>
+    </section>
+
+    
+        
+    
+    <script>
+        var item = document.getElementById("item-list");
+        var p = document.getElementById("p");
+        var check = document.getElementById('caixa')
+        function adcionar(){
+            p.innerHTML= item.value+p.innerHTML;
+        }
+
+        
+    </script>
+</body>
+</html>
